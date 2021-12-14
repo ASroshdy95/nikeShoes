@@ -1,0 +1,211 @@
+/*start direction section*/
+.direction-section .men-direction{
+    color: #000
+}
+
+/*end direction section*/
+
+
+
+/*Start of the gallery */
+  .gallery .main-g{background-color: #fff}
+
+ .gallery img{max-width: 100%}
+  
+ .gallery .master-img{position:relative }
+  
+ .gallery .master-img i{
+   position: absolute;
+   top: 45%;
+   cursor: pointer;
+   font-size: 30px;
+   color: #FA5400}
+  
+ .gallery .master-img i:last-of-type{right: 0%}
+  
+ .gallery .master-img i:first-of-type{left: 0%}
+  
+ .gallery .thumbnails{overflow: hidden;}
+ 
+ .gallery .thumbnails img{
+    float: left;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out
+    }
+    
+.gallery .thumbnails .active{
+ opacity: 1 ;
+ transform: scale(1.1)}
+ /*end of the gallery*/
+ 
+ 
+ /*start gallery info*/
+ .gallery .product-info .price-rate{
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding-bottom: 20px; 
+}
+ 
+ .gallery .product-info .price-rate h2{
+    font-family: "Pathway Gothic One";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 35px;
+    color: #000;
+    padding: 0;
+    margin: 0
+ }
+ 
+  .gallery .product-info .price-rate h3{
+    font-family:"Didact Gothic";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    color: #aaa;
+    padding: 0;
+    margin: 10px 0;
+ }
+ 
+   .gallery .product-info .price-rate .rating{
+    color:#FA5400;
+    position: absolute;
+    right: 0;
+    top: 65%; 
+   }
+   
+   .gallery .product-info .size-qunt{width: 100%}
+   
+   .gallery .product-info .size-qunt .size{padding-left: 0}
+   .gallery .product-info .size-qunt .qunt{padding-right: 0}
+
+   .gallery .product-info .size-qunt .size h3,
+   .gallery .product-info .size-qunt .qunt h3{
+    font: 100 normal 22px "Pathway Gothic One" ;
+    color: #aaa
+   }
+   
+    .gallery .product-info .size-qunt .size select,
+    .gallery .product-info .size-qunt .qunt select{
+        border: 1px solid #ddd;
+        color: #000;
+        padding: 6px 12px;
+        border-radius: 5px;
+        width: 100%;
+        margin-bottom: 10px
+    }
+    
+    .gallery .product-info .size-qunt .size select:focus,
+    .gallery .product-info .size-qunt .qunt select:focus{
+        outline: none
+    }
+    
+    .gallery .product-info .buying-buttons button{
+        background-color: #100B0B;
+        color: #fff;
+        width: 100%;
+       font: 400 normal 18px "Pathway Gothic One" ;
+       margin: 10px 0;
+       padding: 6px 12px;
+       border: none}
+    
+    .gallery .product-info .buying-buttons button:hover{
+        background-color: #FA5400}
+    
+ .prod-det h2{
+        font: 700 normal 27px "Pathway Gothic One";
+        color: #100B0B}
+    
+ .prod-det p{
+        font: 400 normal 15px "Didact Gothic";
+        color: #aaa}
+ /*end gallery info*/
+ 
+ /*Start Dynamic Tabs "item-details" */
+ .item-details{
+    margin: 50px 0;
+    text-transform: capitalize}
+ 
+ .item-details h3{
+    font: 600 normal 25px "Pathway Gothic One";
+    color: #000
+ }
+ 
+ .dynamic-tabs .tabs-list{
+  font: 600 normal 20px "Pathway Gothic One";
+  list-style:none;
+  margin: 0;
+  padding:0;
+ }
+
+.dynamic-tabs .tabs-list li{
+ padding: 15px 30px;
+ background-color: #fff;
+ display: inline-block;
+ position: relative;
+ top: 1px;
+ cursor: pointer;
+}
+
+.dynamic-tabs .tabs-list li:hover:not(.active){color:#A5E126}
+
+.dynamic-tabs .tabs-list .active{
+ background-color: #A5E126;
+ color: #fff;
+ z-index: 2}
+ 
+.dynamic-tabs .content-list{
+ background-color:#fff;
+ margin: 0;
+ padding: 5px;}
+ 
+ .dynamic-tabs .content-list > div{
+  padding: 10px 0;
+  min-height: 100px;
+  font: 400 normal 16px "Segoe UI";
+  color: #aaa
+ }
+ 
+ .dynamic-tabs .content-list > div:not(:first-of-type){display: none}
+ 
+ .switch-tabs-view{
+  background-color: #A5E126;
+  color: #333; 
+  display:block;
+  padding: 10px 15px;
+  margin: 0px auto 10px auto;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  font: 600 normal 20px "Pathway Gothic One";
+ }
+ 
+ .left-tabs{overflow: hidden}
+ 
+ .left-tabs .tabs-list ,
+ .left-tabs .content-list{
+  float: left;}
+ 
+  .left-tabs .tabs-list li{display: block}
+   
+  .left-tabs .content-list > div{
+   width:690px;
+   min-height: 235px
+  }
+
+.left-tabs .tabs-list .active{
+ border-bottom:1px solid #ccc;
+ border-right:1px solid #fff}
+/*End Dynamic Tabs*/
+
+
+/*start product u may like*/
+.products h2{
+    font:bold normal 40px "Pathway Gothic One";
+    color: #000;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center}
+
+
+/*end product u may like*/

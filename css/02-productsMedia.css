@@ -1,0 +1,22 @@
+/*Start Media Query*/
+ 
+ /*smartphone & tablet (xs)*/
+ @media (max-width:768px)
+ {
+
+ 
+ }
+ 
+ /*Small screen (sm)*/
+ @media (min-width:768px) and (max-width:991px)
+ {}
+ 
+ /*medium screen (md)*/
+ @media (min-width:991px) and (max-width:1199px)
+ {}
+ 
+ /*large screen (lg)*/
+ @media (min-width:1200px)
+ {}
+ 
+ /*End Media Query*/

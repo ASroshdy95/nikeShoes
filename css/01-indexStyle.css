@@ -1,0 +1,573 @@
+/*start global & my framwork*/
+*{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ box-sizing: border-box;
+ }
+ 
+ body{
+  font-family:'Didact Gothic', sans-serif;
+  overflow: hidden;
+  }
+  
+  button:focus,input:focus{outline: none}
+  
+  
+/*ُEnd global & my framwork*/
+
+
+
+/*start navbar*/
+.navbar-default{
+ background-color: transparent;
+ border: none;
+ z-index: 1
+}
+
+.navbar-default .navbar-nav > li > a{
+ text-transform: capitalize;
+ font: 400 normal 17px "Pathway Gothic One";
+ color: #000 
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+ background-color: #A5E126;
+}
+
+.navbar-default .navbar-brand{
+ text-transform: uppercase;
+ background-color: #A5E126;
+ color: #fff !important;
+ font: bold normal 30px "Pathway Gothic One";
+ padding: 15px 40px ;
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+line-height: 25px
+}
+
+.navbar-default .navbar-brand:hover{
+ background-color: #A5E126;
+}
+
+.dropdown .dropdown-menu{
+  text-transform: capitalize;
+  }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{border-color: transparent}
+
+.navbar-header .navbar-toggle:hover, 
+.navbar-header .navbar-toggle,
+.navbar-header .navbar-toggle:focus{
+ background-color: #FFF;
+ border-color: #FFF
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin: 5px auto;
+        background-color: #A5E126;
+        border-radius: 10px;
+        transition: 0.3s;
+ }
+ 
+.navbar-header .navbar-toggle:hover .icon-bar:nth-of-type(2) {
+        transform: translateY(1.5px) rotate(4.5deg);
+}
+
+.navbar-header .navbar-toggle:hover .icon-bar:nth-of-type(3) {
+        transform: translateY(0px) rotate(0deg);
+ }
+ 
+ .navbar-header .navbar-toggle:hover .icon-bar:nth-of-type(4) {
+        transform: translateY(-1.5px) rotate(-4.5deg);
+      
+ }
+ 
+ .navbar-header .navbar-toggle.cross .icon-bar:nth-of-type(2) {
+        opacity: 0;
+      }
+
+ .navbar-header .navbar-toggle.cross .icon-bar:nth-of-type(3) {
+        transform: translateY(5px) rotate(40.5deg);
+      }
+      
+ .navbar-header .navbar-toggle.cross .icon-bar:nth-of-type(4) {
+        transform: translateY(-5px) rotate(-40.5deg);
+      }
+
+/*end navbar*/
+
+
+/*start the auto slider*/
+      .auto-slider .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+        z-index: 1
+      }
+
+      .auto-slider .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        position: relative;
+        width: 100%
+      }
+
+      .auto-slider .swiper-slide img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        
+      }
+      
+      .auto-slider .swiper-slide .img-caption{
+       position: absolute;
+       right: 10%;
+      }
+      
+      .auto-slider .swiper-slide .img-caption h3{
+       font-family: "Pathway Gothic One";
+       color:#100b0b;
+       font-size: 75px;
+       line-height: 83px;
+       font-style: normal;
+       text-transform: capitalize;
+       font-weight: bold
+      }
+      
+      .auto-slider .swiper-slide .img-caption h4{
+       font-family: "Anton";
+       color:#A5E126;
+       font-size: 40px;
+       line-height: 20px;
+       font-style: normal;
+       text-transform: capitalize;
+       font-weight: bold !important;
+       position: relative;
+      letter-spacing: 1px;}
+      
+      .auto-slider .swiper-button-next,
+      .auto-slider .swiper-button-prev{
+       color: #A5E126;}
+       
+      .auto-slider .swiper-button-next{right: 5%}
+      
+      .auto-slider .swiper-button-prev{left: 5%}
+
+/*end the auto slider*/
+
+
+
+/*start categories section*/
+
+/*end categories section*/
+
+
+
+/*start products section*/
+.products{
+ background-color:#fff;
+ 
+}
+
+.products .product{
+ background-color: #fff;
+ height: auto;
+ overflow: hidden
+}
+
+.products .product .prod-info{
+ transform: translateY(35px);
+ transition: all 1s ease-in-out
+ }
+ 
+ .products .product:hover .prod-info{
+  transform: translateY(-10px);
+ }
+
+.products .product .prod-info img{
+ object-fit: cover;
+ width: 100%;
+ position: relative
+}
+
+.products .product .prod-info h3{
+ font: bold normal 20px "Pathway Gothic One";
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ display: inline;
+ margin: 0
+ }
+ 
+ .products .product .prod-info .my-cart-btn{
+  float: right;
+  color: #A5E126;
+  cursor: pointer;
+  margin: 5px;
+ }
+ 
+  .products .product .prod-info .my-cart-btn:hover{
+   transform: scale(1.2)
+   }
+
+.products .product button:not(.my-cart-btn){
+ background-color: #A5E126;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ padding: 10px 15px;
+ border: none;
+ font-family: "Pathway Gothic One";
+ font-size: 18px;
+ display: none
+}
+
+.products .product button a{
+ color: #FFF;
+ text-decoration: none}
+
+ .products .product:hover button{
+  display: block
+ }
+
+/*end products section*/
+
+
+/*start subscribe section*/
+.subscribe{
+ width: 100%;
+ margin: 50px auto  ;
+ background-color: #fff;
+}
+
+.subscribe h1{
+ font-family: "Pathway Gothic One";
+ font-size: 38px;
+ font-style: normal;
+ font-weight: 700;
+ color: #100b0b;
+ text-transform: uppercase
+}
+
+.subscribe input{
+ width:30%;
+ border: 2px solid #100b0b;
+ color: #100b0b;
+ padding: 10px 15px;
+ display: inline-block;
+ text-transform: capitalize;
+ font-family: "Pathway Gothic One";
+ font-size: 18px
+}
+
+.subscribe button{
+ width: 10%;
+ padding: 10px 1%;
+ border: 2px solid #100b0b;
+ border-radius: 0;
+ display: inline-block;
+ background-color: #FFF;
+  text-transform: capitalize;
+ font-family: "Pathway Gothic One";
+ color: #000;
+ font-size: 18px
+}
+
+.subscribe button:hover{
+background-color: #A5E126;
+color: #fff;
+border: 2px solid #A5E126}
+/*end subscribe section*/
+
+
+/*start footer section*/
+.footer{
+ background-color: #fff;
+ padding: 100px 0}
+
+.footer h3{
+ text-transform: uppercase;
+ font-weight: bold;
+ font-family: "Pathway Gothic One";
+ color: #A5E126}
+
+.footer ul:not(.social-media) li{padding: 5px 0}
+
+.footer .social-media li{
+ float: left;
+ list-style: none;
+ padding: 0}
+ 
+ .footer ul li:hover{cursor: pointer}
+
+.footer ul a{
+ text-decoration: none;
+ color: #000;
+ text-transform: capitalize}
+
+.footer ul a:hover{
+ color: #A5E126;
+ font-weight: bold;}
+
+.footer ul i{
+ padding: 0 5px ;
+ color: #A5E126;
+ cursor: pointer}
+
+.fa-facebook-f:hover{color: #1877f2}
+
+.fa-instagram:hover{color: #c13584}
+
+.fa-twitter:hover{color: #1da1f2}
+
+.fa-youtube:hover{color: #ff0000}
+/*end footer section*/
+
+/*start setting*/
+.setting{
+ position: fixed;
+ bottom: 2%;
+ left: -101px;
+ background-color:#A5E126;;
+ cursor: pointer;
+ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+ width: 100px;
+ height: 100px;
+ z-index: 3;
+ transition: all 0.5s ease-in-out;
+ border: none}
+
+.setting.open{left: 0px}
+
+.setting .fa-cog{
+ position: absolute;
+ bottom: 5%;
+ right: -40%;
+ color:#A5E126}
+
+.setting button{
+ display: block;
+ margin: 10px 0;
+ font: 400 normal 18px "Pathway Gothic One";
+ text-transform: capitalize;
+ border: none;
+ background-color: transparent;
+ padding: 6px 15px;
+ transition: all 0.5s ease-in-out;
+ min-width: 100px;}
+ 
+ .setting button:hover{background-color:#fff}
+ 
+.setting button a{
+ color: #fff;
+ text-decoration: none}
+
+.setting button:hover a{color:#A5E126;} 
+/*end setting*/
+
+/*start loader overlay*/
+.loader-overlay{
+ background-color:#fff;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 99999999999999999999999999999;
+ text-align: center;
+}
+
+.loader-overlay .loader-content{
+ position: fixed;
+ top: 45%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ color:#000}
+
+.loader-overlay p,.loader-overlay span{
+ font-size: 100px;
+ display: none;
+ margin-top: 50px;
+ font-weight: bold}
+ 
+ .loader-overlay p .change{
+  font-size: 100px;
+  font-family: 'Anton',
+  sans-serif;
+  }
+/*end loader overlay*/
+
+/*start scroll-to-top button*/
+ .scroll-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  background-color:#A5E126;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  z-index: 3;
+  height: 40px;
+  width: 40px;
+  opacity: 0.9;
+ }
+
+  .scroll-to-top div{
+    height: 100%;
+    width: 100%;
+     display: grid;
+     align-content: center;
+     align-items: center;
+  }
+
+  .scroll-to-top:hover{
+    opacity: 1;
+  }
+ 
+ .scroll-to-top i{
+font-size: 20px;
+ }
+/*End scroll-to-top button*/
+
+/*start cart*/
+.cart-section{
+ padding: 0 35px
+}
+
+.my-cart-icon{
+ font-size: 30px;
+ color: #fff;
+ cursor: pointer;
+ margin: 0px 0;
+ position: relative;
+}
+
+.badge-notify{
+ background: red;
+ position:absolute;
+ top: 0px;
+ left: 0px;
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-content: center
+}
+
+.my-cart-btn{
+ border: none;
+ background-color: transparent}
+
+.setting  p{
+ position: absolute;
+ bottom: 10%;
+ left:  150%;
+ font:400 normal 17px "Pathway Gothic One";
+ background-color: #fff;
+ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.5);
+ padding: 15px 20px ;
+ width:200px;
+ color: #000;
+ border-radius: 50px 50px 50px 0px;}
+
+/*cart table*/
+.modal-dialog{
+ margin: 100px auto;
+ color: #FFF;
+ border-radius: 12px}
+
+.modal-content{background-color:#A5E126 }
+
+.modal-header{
+ text-align: center;
+ color: #fff;
+ border-bottom: none}
+ 
+ .modal-header .modal-title{font-weight: bold}
+ 
+ .modal-header .glyphicon-shopping-cart{font-size: 16px}
+ 
+ .close{
+  font-size: 30px;
+  color: #FFF;
+  opacity: 1}
+  
+  .modal-body tbody tr{
+   border:none;
+   color:#fff;
+   font-weight:bold}
+  
+  .modal-body tbody tr:hover{background-color: #A5E126}
+  
+  .modal-body tbody tr td input.my-product-quantity{
+   border: none;
+   color: #A5E126}
+  
+  .modal-body tbody tr td{
+   border:none;
+   background: transparent !important}
+  
+  .modal-body tbody tr td .my-product-remove{
+   border-radius: 50%;
+   border:none;
+   background-color: #000;
+   font-weight: bold;
+   text-align: center}
+  
+  .modal-body tbody tr:last-child{
+   background-color:transparent;
+   color: #000 !important;
+   font-weight: bold}
+   
+   .modal-body img{
+    width: 50px
+   }
+   
+   .modal-footer{
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #fff}
+  
+  .modal-footer button{
+    border: none;
+    background-color: #100B0B;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 0}
+    
+   .modal-footer button:focus{outline: none !important} 
+  
+  .modal-footer button:hover{
+   background-color:#FA5400 ;
+   color: #fff}
+  
+  .table.table-hover.table-responsive{border: none}
+/*end cart*/

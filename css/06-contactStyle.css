@@ -1,0 +1,55 @@
+/*start direction-section*/
+.direction-section p:not(:last-child){color: #000}
+/*end direction-section*/
+
+/*start regist*/
+.contact{
+    margin: 50px 0;
+    text-transform: capitalize;}
+
+.contact h2{
+    font: 500 normal 35px "Pathway Gothic One";
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.contact .contact-fields{
+    margin: 40px 0
+}
+
+.contact .contact-fields input,
+.contact .contact-fields textarea{
+    width: 70%;
+    padding: 10px 15px ;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 20px 0;
+    text-transform: capitalize
+}
+
+.contact .contact-fields textarea{height: 200px}
+
+.contact .contact-fields input:focus{outline:none}
+
+.contact button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 60px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 40px;
+    font:bold normal 18px "Pathway Gothic One";
+}
+
+.contact button:last-child{
+    margin-top: 40px
+}
+
+.contact button:hover{
+    background-color:#FA5400 
+}
+
+
+
+/*end regist*/

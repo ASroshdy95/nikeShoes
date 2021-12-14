@@ -1,0 +1,65 @@
+/*start direction-section*/
+.direction-section p:not(:last-child){color: #000}
+/*end direction-section*/
+
+/*start regist*/
+.regist{
+    margin: 50px 0;
+    text-transform: capitalize}
+
+.regist h2{
+    font: 500 normal 35px "Pathway Gothic One";
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.regist a{
+    color: #a5e126;
+    font-weight: bold}
+    
+    
+.regist p{
+    font:400 normal 16px "Segoe UI";
+    color: #aaa
+}
+
+.regist .regist-fields{
+    margin: 40px 0
+}
+
+.regist .regist-fields label{
+    display: block;
+    font: 500 normal 20px "Pathway Gothic One";
+    color: #000;
+    margin-top: 20px
+}
+
+.regist .regist-fields  input{
+    width: 70%;
+    padding: 10px 15px ;
+    border: 1px solid #ddd
+}
+
+.regist .regist-fields input:focus{outline:none}
+
+.regist button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 40px
+}
+
+.regist button:last-child{
+    margin-top: 40px
+}
+
+.regist button:hover{
+    background-color:#FA5400 
+}
+
+
+
+/*end regist*/
